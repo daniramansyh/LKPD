@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let n = 91256; 
+    let puluhribu, ribu,ratus,puluh,unit
+ 
+    unit = n % 10; 
+    puluh = (n/10) % 10; 
+    ratus = (n/100) % 10; 
+    ribu = n/1000 % 10;
+    puluhribu = n / 10000;
+    console.log(Math.floor(puluhribu) + " puluhan ribu " + Math.floor(ribu) + " ribuan " + Math.floor(ratus) + " ratusan " 
+    + Math.floor(puluh) + " puluhan " + Math.floor(unit ) + " satuan ");
+    </script>
+</body>
+</html>
