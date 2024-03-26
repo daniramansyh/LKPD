@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // let terbesar = 0
+    // let jumlah = 0
+    // let i = 0
+    // do {
+    //     i++
+    //     if (i < 3) {
+    //         let nilai = parseInt(prompt("input Nilai"))
+    //         if (nilai > terbesar) {
+    //             terbesar = nilai
+    //             jumlah = jumlah + nilai
+    //         } else {
+    //             terbesar
+    //             jumlah = jumlah + terbesar
+    //         }
+    //     } else {
+    //         console.log (`Jadi nilai terbesarnya adalah ${terbesar} & nilai rata rata nya adalah ${jumlah/2}`)
+    //     }
+    // } while (i < 3)
+
+    let terbesar = 0
+let jumlah = 0
+let i = 0
+
+do {
+    i++
+    if (i < 3) {
+        let nilai = parseInt(prompt("input Nilai"))
+        if (nilai > terbesar) {
+            terbesar = nilai
+        }
+        jumlah = jumlah + nilai
+    } else {
+        console.log(`Jadi nilai terbesarnya adalah ${terbesar} & nilai rata rata nya adalah ${jumlah / 2}`)
+    }
+} while (i < 3)
+</script>
+</body>
+</html>

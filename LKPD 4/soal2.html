@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let kode = ("22505198703");
+        // Memecahkan kode sesuai kebutuhan
+        let g = kode.slice (0,1)
+        let dd = kode.slice (1,3)
+        let mm = parseInt(kode.slice (3,5));
+        let yyyy = kode.slice (5,9)
+        let nn = kode.slice (9,11)
+        
+        // Merubah bulan
+        switch (mm) {
+            case 1:
+                Month = "Januari";
+                break;
+            case 2:
+                Month = "Februari";
+                break;
+            case 3:
+                Month = "Maret";
+                break;
+            case 4:
+                Month = "April";
+                break;
+            case 5:
+                Month = "Mei";
+                break;
+            case 6:
+                Month = "Juni";
+                break;
+            case 7:
+                Month = "Juli";
+                break;
+            case 8:
+                Month = "Agustus";
+                break;
+            case 9:
+                Month = "September";
+                break;
+            case 10:
+                Month = "Oktober";
+                break;
+            case 11:
+                Month = "November";
+                break;
+            case 12:
+                Month = "Desember ";
+                break;
+        }
+        document.write(`Pekerja dengan nomer golongan: ${g} Memiliki tanggal lahir ${dd} ${Month} ${yyyy} dengan kode identitas: ${nn}`)
+    </script>
+</body>
+</html>

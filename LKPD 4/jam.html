@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function tambahSatuDetik(waktu) {
+let [jam, menit, detik] = waktu.split(':'); // Memisahkan jam, menit, dan detik
+
+  // Mengonversi jam, menit, dan detik ke dalam bentuk angka
+  jam = parseInt(jam, 10);
+  menit = parseInt(menit, 10);
+  detik = parseInt(detik, 10);
+
+  // Menambahkan 1 detik
+  detik += 1;
+
+  // Memeriksa apakah perlu menambahkan menit atau jam
+  if (detik === 60) {
+    detik = 0;
+    menit += 1;
+
+    if (menit === 60) {
+      menit = 0;
+      jam += 1;
+
+      if (jam === 24) {
+        jam = 0; // Jika mencapai 24 jam, kembali ke 0 jam
+      }
+    }
+  }
+
+  // Mengonversi kembali ke dalam format hh:mm:ss
+  jam = jam.toString().padStart(2, '0');
+  menit = menit.toString().padStart(2, '0');
+  detik = detik.toString().padStart(2, '0');
+
+  return `${jam}:${menit}:${detik}`;
+}
+
+// Contoh penggunaan
+const waktuAwal = "23:59:59";
+const waktuBaru = tambahSatuDetik(waktuAwal);
+console.log("Waktu Awal:", waktuAwal);
+console.log("Waktu Baru:", waktuBaru);
+
+    </script>
+</body>
+</html>
