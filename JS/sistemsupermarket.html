@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Kasir</title>
+</head>
+<body>
+    <script>
+        let harga = []
+        let uang = []
+
+        for (let i = 1; i <= 10; i++ ) {
+            let nampungHarga = parseFloat(prompt(`Harga barang ke ${i}`))
+            let nampungUang = parseFloat(prompt(`Uang yang digunakan ke ${i}`))
+            let nampung = nampungHarga/100
+            let bulatkan = Math.round (nampung);
+            let bayar = bulatkan * 100;
+            let sisa = nampungUang - bayar
+            harga.push(nampungHarga)
+            uang.push(sisa)
+        }
+        document.write(`Harga awal : ${harga}`)
+        document.write(`Kembalian : ${uang}`)
+    </script>
+</body>
+</html>

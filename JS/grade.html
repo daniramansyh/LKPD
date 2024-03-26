@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lat1</title>
+</head>
+<body>
+    <script>
+        let PPK = 84;
+        let Bing = 91;
+        let Math = 76;
+        let Science = 52;
+        let Sunda = 17;
+
+        let mean = (PPK + Bing + Math + Science + Sunda) / 5;
+        console.log (mean)
+
+        function generateBiodata () {
+    if (mean > 90 && mean <= 100 ) {
+        console.log("A")
+    } else if (mean > 80 && mean <= 90 ) {
+        console.log("B")
+    } else if (mean > 75 && mean <= 80 ) {
+        console.log("C")
+    } else if (mean > 71 && mean <= 75 ) {
+        console.log("D")
+    } else if (mean > 60 && mean <= 71 ) {
+        console.log("E")
+    } else {
+        console.log("Kurang Kompeten")
+    }
+}
+
+console.log(mean)
+generateBiodata ();
+    </script>
+</body>
+</html>

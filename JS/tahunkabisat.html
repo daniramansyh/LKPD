@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabisat</title>
+</head>
+<body>
+    <script>
+        // Mencaria tahun kabisat
+        // for (let tahun = 1600; tahun <= 2024; tahun++) {
+        //     if (tahun % 400 == 0){
+        //         document.write(`${tahun} ini adalah tahun kabisat <br>`)
+        //     } else if (tahun % 100 == 0) {
+        //         document.write (`${tahun} ini bukan tahun kabisat <br>`)
+        //     } else if (tahun % 4 == 0) {
+        //         document.write (`${tahun} ini adalah tahun kabisat <br>`)
+        //     } else if (tahun % 100 == 0 && tahun % 400 == 0) {
+        //         document.write (`${tahun} ini bukan tahun kabisat <br>`)
+        //     } 
+        // }
+
+        // Bukan tahun kabisat
+        for (let tahun = 1600; tahun <= 2024; tahun++) {
+            if (tahun % 400 != 0 && tahun % 4 != 0) {
+                document.write (`${tahun} Bukan kabisat<br>`)
+            }
+        }
+    </script>
+</body>
+</html>
